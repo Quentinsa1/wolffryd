@@ -18,7 +18,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.example.com/">
     <meta property="twitter:title" content="Wolffryd FATIGBA - Directeur des Risques">
-    <meta property="twitter:description" content="Portfolio de Wolffryd FATIGBA, expert en gestion des risques bancaires avec plus de 20 ans d'expérience.">
+    <meta property="twitter:description" content="Portfolio de Wolffryd FATIGBA, expert en gestion des risques bancaires avec mais de 20 ans d'expérience.">
     <meta property="twitter:image" content="https://www.example.com/wolffryd.jpg">
     
     <title>Wolffryd FATIGBA | Directeur des Risques et du Contrôle Permanent</title>
@@ -209,6 +209,63 @@
             width: 70%;
             left: 15%;
         }
+
+        .btn-bio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, var(--primary-blue), var(--dark-blue));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(64, 224, 208, 0.3);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-bio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(64, 224, 208, 0.4);
+}
+
+.btn-bio:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--dark-blue), var(--darker-blue));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.btn-bio:hover:before {
+    opacity: 1;
+}
+
+.btn-bio span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-bio i {
+    margin-left: 10px;
+    transition: transform 0.4s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.btn-bio:hover i {
+    transform: translateX(5px);
+}
 
         /* Theme switcher */
         .theme-switcher {
@@ -993,9 +1050,9 @@
             }
             
             .hero-section {
-                height: auto;
-                padding: 120px 0;
-                background-attachment: scroll;
+            height: auto;
+            padding: 120px 0;
+            background-attachment: scroll;
             }
             
             .hero-title {
@@ -1083,9 +1140,6 @@
                         <a class="nav-link" href="#expertise">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
@@ -1132,10 +1186,10 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <p class="lead" data-aos="fade-up" data-aos-delay="100">
-                            Professionnel expérimenté dans le secteur bancaire avec une expertise approfondie en gestion des risques, contrôle permanent et conformité réglementaire.
+                            Senior Risk Manager Certifié, Master en Finance et Contrôle de Gestion et Diplômé de l'ITB (actuelle ESB-Paris) après une Maitrise en Economie de Gestion.
                         </p>
                         <p data-aos="fade-up" data-aos-delay="200">
-                            J'ai développé une solide expertise en analyse et gestion des risques bancaires, en particulier dans le contexte réglementaire UMOA et les normes de Bâle II et III. Mon parcours m'a permis d'acquérir une vision globale des enjeux de la gestion des risques dans les établissements financiers.
+                            J'ai une très bonne connaissance des activités bancaires (opérations locales et internationales, opérations de financement et d'investissement, gestion de la trésorerie…) pour les avoir pratiquées et dirigées. J'ai une expérience de plus de vingt (20) ans dans le secteur bancaire dont 08 ans au poste Responsable de gestion des risques de Crédit et près de 5 ans au poste de Directeur des risques.
                         </p>
                         <div class="row mt-5">
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
@@ -1170,142 +1224,75 @@
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
                 <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Gestion des risques bancaires</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Contrôle permanent et interne</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Conformité réglementaire UMOA</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Analyse financière</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Bâle II & III</span>
-                                <span>93%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Management d'équipe</span>
-                                <span>87%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="text-center mb-4">Autres Compétences</h4>
-                            <div id="skillsCollapse" class="collapse">
+                    <div class="col-lg-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="text-center mb-4">Compétences Principales</h4>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Lutte contre le blanchiment (LCB-FT)</span>
-                                                <span>90%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Gestion de trésorerie</span>
-                                                <span>85%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Opérations internationales</span>
-                                                <span>88%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Gestion des risques bancaires
+                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Contrôle permanent et interne
+                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Conformité réglementaire UMOA
+                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Réglementation Bâle II & III
+                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Compensation interbancaire</span>
-                                                <span>82%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Management d'équipe</span>
-                                                <span>87%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <div class="skill-info">
-                                                <span>Applications bancaires</span>
-                                                <span>83%</span>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Analyse financière
+                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Management d'équipe
+                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Lutte contre le blanchiment (LCB-FT)
+                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Gestion de trésorerie
+                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center mt-4">
-                                <button class="btn btn-primary-blue" type="button" data-bs-toggle="collapse" data-bs-target="#skillsCollapse" aria-expanded="false" aria-controls="skillsCollapse">
-                                    Voir toutes les compétences
-                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="text-center mb-4">Autres Compétences</h4>
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <span class="badge bg-secondary m-1 p-2">Opérations internationales</span>
+                                    <span class="badge bg-secondary m-1 p-2">Compensation interbancaire</span>
+                                    <span class="badge bg-secondary m-1 p-2">Applications bancaires</span>
+                                    <span class="badge bg-secondary m-1 p-2">Word, Excel, Power Point</span>
+                                    <span class="badge bg-secondary m-1 p-2">Planification et organisation</span>
+                                    <span class="badge bg-secondary m-1 p-2">Formation et développement d'équipes</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
 
         <!-- Experience Section -->
         <section id="experience" class="section-padding">
@@ -1313,135 +1300,158 @@
                 <h2 class="section-title" data-aos="fade-up">Expérience Professionnelle</h2>
                 <div class="timeline">
                     <div class="timeline-item" data-aos="fade-up">
-                        <span class="timeline-date">2018 - Présent</span>
+                        <span class="timeline-date">Juil. 2020 - Présent</span>
                         <div class="timeline-content">
                             <h4>Directeur des Risques et du Contrôle Permanent</h4>
-                            <h5>Banque Internationale</h5>
-                            <p>Direction de la mise en place du dispositif de contrôle permanent et de gestion des risques.</p>
+                            <h5>BIIC</h5>
+                            <p>Rattaché au Directeur Général avec une équipe de 19 membres.</p>
                             <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
                                 <ul>
-                                    <li>Mise en place du dispositif de contrôle permanent conforme aux normes Bâle II et III</li>
-                                    <li>Élaboration et mise en œuvre de la politique de gestion des risques</li>
-                                    <li>Supervision d'une équipe de 15 collaborateurs</li>
-                                    <li>Réduction de 30% des incidents de conformité</li>
+                                    <li>Elaboration et mise en œuvre du dispositif global de gestion des risques</li>
+                                    <li>Elaboration, suivi continu et revue de la cartographie des risques</li>
+                                    <li>Elaboration du dispositif d'appétence aux risques et surveillance des indicateurs d'appétence et des limites</li>
+                                    <li>Elaboration et revue des chartes, des politiques et procédures de gestion des risques</li>
+                                    <li>Elaboration du Plan Préventif de Redressement</li>
+                                    <li>Accompagnement de tous les projets innovants, nouveaux produits et services (digitaux ou non) en tant que support règlementaire</li>
+                                </ul>
+                                <h6>Principales responsabilités :</h6>
+                                <ul>
+                                    <li>Assurance de la fonction gestion des risques conformément à l'article 6 de la circulaire N°04-2017/CB/C</li>
+                                    <li>Pilotage de l'analyse et du Suivi de la qualité des portefeuilles de crédit et de titres</li>
+                                    <li>Pilotage du contrôle permanent, de la collecte des incidents et des pertes opérationnelles</li>
+                                    <li>Emission des avis de non-objection ou d'objection sur les dossiers de crédit qualifiés de risques importants</li>
+                                    <li>Secrétariat du Comité des Risques du Conseil d'administration</li>
+                                    <li>Production des rapports sur les risques (profil de risque, dépassements de limite, simulations de crises, suivi des recommandations) et sur le contrôle permanent</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                        <span class="timeline-date">2012 - 2018</span>
+                        <span class="timeline-date">Août 2012–Juin 2020</span>
                         <div class="timeline-content">
-                            <h4>Responsable du Contrôle Interne</h4>
-                            <h5>Groupe Financier Ouest Africain</h5>
-                            <p>Gestion du dispositif de contrôle interne et analyse des risques opérationnels.</p>
+                            <h4>Responsable de la Gestion des Risques</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Directeur Général avec une équipe de 3 membres.</p>
                             <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
                                 <ul>
-                                    <li>Conception et mise en œuvre du cadre de contrôle interne</li>
-                                    <li>Formation des équipes sur les processus de contrôle</li>
-                                    <li>Réalisation d'audits internes et recommandations d'amélioration</li>
-                                    <li>Collaboration avec les auditeurs externes</li>
+                                    <li>Gestion des risques de crédit (contre étude, analyse et suivi de la qualité du portefeuille)</li>
+                                    <li>Coordination du dispositif LBC-FT</li>
+                                </ul>
+                                <h6>Autres tâches :</h6>
+                                <ul>
+                                    <li>Mise à jour des procédures et conduite des réformes Bâle 2&3 au sein de la banque</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <span class="timeline-date">2007 - 2012</span>
+                        <span class="timeline-date">Mars 2012–Juil. 2012</span>
                         <div class="timeline-content">
-                            <h4>Analyste Risques Financiers</h4>
-                            <h5>Banque Commerciale</h5>
-                            <p>Analyse des risques de crédit et participation à l'élaboration des politiques de risque.</p>
+                            <h4>Responsable du Contrôle Général</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Directeur Général avec une équipe de 5 membres.</p>
                             <div class="timeline-details">
+                                <h6>Principale réalisation :</h6>
                                 <ul>
-                                    <li>Évaluation des risques de crédit des entreprises et particuliers</li>
-                                    <li>Développement de modèles de scoring</li>
-                                    <li>Participation aux comités de crédit</li>
-                                    <li>Rédaction de rapports d'analyse risques</li>
+                                    <li>Coordination de l'audit interne et du contrôle permanent</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <span class="timeline-date">Mars 2012–Juil. 2012</span>
-                    <div class="timeline-content">
-                        <h4>Responsable du Contrôle Général</h4>
-                        <h5>BIBE</h5>
-                        <p>Rattaché au Directeur Général avec une équipe de 5 membres.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principale réalisation :</strong> Coordination de l'audit interne et du contrôle permanent.</p>
+                        <span class="timeline-date">Mars 2010–Fév. 2012</span>
+                        <div class="timeline-content">
+                            <h4>Responsable de la Trésorerie, Relations Internationales</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Directeur des Opérations avec une équipe de 8 membres.</p>
+                            <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
+                                <ul>
+                                    <li>Gestion des opérations de trésorerie et du commerce extérieur</li>
+                                </ul>
+                                <h6>Autre tâche :</h6>
+                                <ul>
+                                    <li>Régularisation des vieux suspens en XOF et devises et des commissions non perçues sur CREDOC avant prise de service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="timeline-date">Oct. 2007–Fév. 2010</span>
+                        <div class="timeline-content">
+                            <h4>Chef d'agences</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Responsable Opérations Domestiques avec une équipe de 8 membres.</p>
+                            <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
+                                <ul>
+                                    <li>Animation de deux agences successives en tant que centres de profit</li>
+                                </ul>
+                                <h6>Résultat :</h6>
+                                <ul>
+                                    <li>Contribution à l'amélioration du PNB de la 1ère par le recrutement de nouveaux clients à commission dans le BTP et le commerce international</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                        <span class="timeline-date">Nov. 2006–Sept. 2007</span>
+                        <div class="timeline-content">
+                            <h4>Chef du Service de la Compensation</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Responsable Trésorerie et Relations Internationales avec un collaborateur.</p>
+                            <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
+                                <ul>
+                                    <li>Compensation interbancaire locale, régionale, internationale et règlements divers via SICA et STAR-UMOA</li>
+                                </ul>
+                                <h6>Autre :</h6>
+                                <ul>
+                                    <li>Régularisation des vieux suspens</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                        <span class="timeline-date">Mai 2003–Oct. 2006</span>
+                        <div class="timeline-content">
+                            <h4>Analyste Financier, Chargé du Crédit</h4>
+                            <h5>BIBE</h5>
+                            <p>Rattaché au Responsable Gestion des Risques.</p>
+                            <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
+                                <ul>
+                                    <li>Etude et analyse des dossiers de crédit (des Grandes entreprises et PME en BTP, commerce et industrie, et des Particuliers)</li>
+                                </ul>
+                                <h6>Autre tâche :</h6>
+                                <ul>
+                                    <li>Secrétaire permanent du Comité de Crédit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
+                        <span class="timeline-date">Mai 2002–Août 2002</span>
+                        <div class="timeline-content">
+                            <h4>Assistant Analyste Rédacteur</h4>
+                            <h5>Crédit Lyonnais Cameroun</h5>
+                            <p>Sous la supervision de l'Analyste rédacteur.</p>
+                            <div class="timeline-details">
+                                <h6>Principales réalisations :</h6>
+                                <ul>
+                                    <li>Montage et étude des dossiers de crédit, des accords de classement (clients BTP, Commerce et Industrie)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <span class="timeline-date">Mars 2010–Fév. 2012</span>
-                    <div class="timeline-content">
-                        <h4>Responsable de la Trésorerie, Relations Internationales</h4>
-                        <h5>BIBE</h5>
-                        <p>Rattaché au Directeur des Opérations avec une équipe de 8 membres.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principales réalisations :</strong> Gestion des opérations de trésorerie et du commerce extérieur.</p>
-                            <p><strong>Autre tâche :</strong> Régularisation des vieux suspens en XOF et devises et des commissions non perçues sur CREDOC avant prise de service.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-                    <span class="timeline-date">Oct. 2007–Fév. 2010</span>
-                    <div class="timeline-content">
-                        <h4>Chef d'agences</h4>
-                        <h5>BIBE</h5>
-                        <p>Rattaché au Responsable Opérations Domestiques avec une équipe de 8 membres.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principales réalisations :</strong> Animation de deux agences successives en tant que centres de profit.</p>
-                            <p><strong>Résultat :</strong> Contribution à l'amélioration du PNB de la 1ère par le recrutement de nouveaux clients à commission dans le BTP et le commerce international.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-                    <span class="timeline-date">Nov. 2006–Sept. 2007</span>
-                    <div class="timeline-content">
-                        <h4>Chef du Service de la Compensation</h4>
-                        <h5>BIBE</h5>
-                        <p>Rattaché au Responsable Trésorerie et Relations Internationales avec un collaborateur.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principales réalisations :</strong> Compensation interbancaire locale, régionale, internationale et règlements divers via SICA et STAR-UMOA.</p>
-                            <p><strong>Autre :</strong> Régularisation des vieux suspens.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
-                    <span class="timeline-date">Mai 2003–Oct. 2006</span>
-                    <div class="timeline-content">
-                        <h4>Analyste Financier, Chargé du Crédit</h4>
-                        <h5>BIBE</h5>
-                        <p>Rattaché au Responsable Gestion des Risques.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principales réalisations :</strong> Etude et analyse des dossiers de crédit (des Grandes entreprises et PME en BTP, commerce et industrie, et des Particuliers).</p>
-                            <p><strong>Autre tâche :</strong> Secrétaire permanent du Comité de Crédit.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
-                    <span class="timeline-date">Mai 2002–Août 2002</span>
-                    <div class="timeline-content">
-                        <h4>Assistant Analyste Rédacteur</h4>
-                        <h5>Crédit Lyonnais Cameroun</h5>
-                        <p>Sous la supervision de l'Analyste rédacteur.</p>
-                        <div class="timeline-details">
-                            <p><strong>Principales réalisations :</strong> Montage et étude des dossiers de crédit, des accords de classement (clients BTP, Commerce et Industrie).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <button class="btn btn-primary-blue" id="expandAllExperience">
-                    Voir toute l'expérience
-                </button>
-            </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary-blue" id="expandAllExperience">
+                        Voir toute l'expérience
+                    </button>
                 </div>
             </div>
         </section>
@@ -1456,14 +1466,14 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box icon-box-gold me-3">
-                                        <i class="fas fa-graduation-cap"></i>
+                                        <i class="fas fa-certificate"></i>
                                     </div>
                                     <div>
-                                        <h4 class="card-title mb-0">Master en Finance</h4>
-                                        <p class="card-text text-muted">Institut Catholique de Yaoundé</p>
+                                        <h4 class="card-title mb-0">Certifié Sénior Risk Manager</h4>
+                                        <p class="card-text text-muted">Institut Canadien des Dérivés de HEC–Montréal (2024)</p>
                                     </div>
                                 </div>
-                                <p class="card-text">Spécialisation en analyse financière et gestion des risques avec mention très honorable.</p>
+                                <p class="card-text">Modules : « Stratégie et direction des risques », « Management des risques d'entreprise », « Réglementation bancaire et risque de crédit ».</p>
                             </div>
                         </div>
                     </div>
@@ -1472,14 +1482,14 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box icon-box-gold me-3">
-                                        <i class="fas fa-certificate"></i>
+                                        <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
-                                        <h4 class="card-title mb-0">Certification en Risques Bancaires</h4>
-                                        <p class="card-text text-muted">Institut de la Banque Centrale</p>
+                                        <h4 class="card-title mb-0">Master professionnel</h4>
+                                        <p class="card-text text-muted">Ecole doctorale des Sciences de Gestion–UAC Bénin (2017-2018)</p>
                                     </div>
                                 </div>
-                                <p class="card-text">Certification avancée en gestion des risques bancaires et conformité réglementaire.</p>
+                                <p class="card-text">Option : Sciences de Gestion, spécialité : Finance et Contrôle de Gestion.</p>
                             </div>
                         </div>
                     </div>
@@ -1488,14 +1498,14 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box icon-box-gold me-3">
-                                        <i class="fas fa-certificate"></i>
+                                        <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
-                                        <h4 class="card-title mb-0">Bâle II & III Implementation</h4>
-                                        <p class="card-text text-muted">Financial Risk Institute</p>
+                                        <h4 class="card-title mb-0">Diplôme d'Études Supérieures</h4>
+                                        <p class="card-text text-muted">Institut Technique de Banque–ESB Paris (2005-2007)</p>
                                     </div>
                                 </div>
-                                <p class="card-text">Formation certifiante sur la mise en œuvre des accords de Bâle II et III dans les établissements financiers.</p>
+                                <p class="card-text">Spécialité : Administration de Banque.</p>
                             </div>
                         </div>
                     </div>
@@ -1504,14 +1514,42 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box icon-box-gold me-3">
-                                        <i class="fas fa-certificate"></i>
+                                        <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
-                                        <h4 class="card-title mb-0">Audit Interne Bancaire</h4>
-                                        <p class="card-text text-muted">African Banking Institute</p>
+                                        <h4 class="card-title mb-0">Maîtrise Economie de Gestion</h4>
+                                        <p class="card-text text-muted">Institut Catholique Yaoundé–Cameroun (1998-2002)</p>
                                     </div>
                                 </div>
-                                <p class="card-text">Certification en audit interne et contrôle dans le secteur bancaire.</p>
+                                <p class="card-text">Option : Gestion des entreprises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="text-center mb-4">Séminaires de formation professionnelle (2004-2024)</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Formation sur « Bâtir un dispositif de Lutte contre la fraude interne » à Marrakech (novembre 2024)</li>
+                                            <li>Formation sur « La nouvelle loi bancaire : principales évolutions et impacts pour les assujettis » à Cotonou (juin 2024)</li>
+                                            <li>Divers séminaires de formation sur la Lutte contre le Blanchiment des Capitaux et le Financement du Terrorisme (2004-2024)</li>
+                                            <li>Formation sur l'utilisation de l'application IDEA, logiciel de traitement de données, à Cotonou (juillet 2023)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li>Séminaires sur « le nouveau dispositif prudentiel applicables aux banques et compagnies financières transposant les dispositions de Bâle II et Bâle III dans l'UMOA » à la BCEAO à Dakar (2015, 2016) et à Cotonou (2017)</li>
+                                            <li>Formation qualifiante sur la « Gestion des risques bancaires et Bâle II » à la BCEAO à Lomé (octobre 2013)</li>
+                                            <li>Séminaire de formation sur « l'acte uniforme de l'OHADA révisé portant organisation des sûretés » à la BOAD à Lomé (mai 2013)</li>
+                                            <li>Séminaire de formation sur le « Team Building » (juillet 2011)</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1542,7 +1580,7 @@
                                     <i class="fas fa-balance-scale"></i>
                                 </div>
                                 <h4 class="card-title">Conformité Réglementaire</h4>
-                                <p class="card-text">Mise en conformité avec les réglementations bancaires UMOA et les normes internationales.</p>
+                                <p class="card-text">Mise en conformité avec les réglementations bancaires UMOA et les normes internationales (Bâle II & III).</p>
                             </div>
                         </div>
                     </div>
@@ -1572,10 +1610,10 @@
                         <div class="card h-100">
                             <div class="card-body text-center">
                                 <div class="icon-box icon-box-gold mb-3">
-                                    <i class="fas fa-cogs"></i>
+                                    <i class="fas fa-money-bill-wave"></i>
                                 </div>
-                                <h4 class="card-title">Processus Optimisation</h4>
-                                <p class="card-text">Amélioration des processus de gestion des risques et de contrôle interne.</p>
+                                <h4 class="card-title">Gestion de Trésorerie</h4>
+                                <p class="card-text">Gestion des opérations de trésorerie et du commerce extérieur.</p>
                             </div>
                         </div>
                     </div>
@@ -1583,138 +1621,65 @@
                         <div class="card h-100">
                             <div class="card-body text-center">
                                 <div class="icon-box icon-box-accent mb-3">
-                                    <i class="fas fa-users"></i>
+                                    <i class="fas fa-exchange-alt"></i>
                                 </div>
-                                <h4 class="card-title">Formation & Management</h4>
-                                <p class="card-text">Encadrement d'équipes et formation des collaborateurs aux meilleures pratiques.</p>
+                                <h4 class="card-title">Compensation Interbancaire</h4>
+                                <p class="card-text">Compensation locale, régionale et internationale via SICA et STAR-UMOA.</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="700">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <div class="icon-box mb-3">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h4 class="card-title">Relations Internationales</h4>
-                            <p class="card-text">Gestion des opérations internationales et du commerce extérieur.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="800">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <div class="icon-box icon-box-gold mb-3">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                            <h4 class="card-title">Compensation Interbancaire</h4>
-                            <p class="card-text">Compensation locale, régionale et internationale via SICA et STAR-UMOA.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="900">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <div class="icon-box icon-box-accent mb-3">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h4 class="card-title">Lutte contre la Fraude</h4>
-                            <p class="card-text">Mise en place de dispositifs de lutte contre la fraude interne et externe.</p>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="section-padding bg-accent-blue">
+        <!-- Biography Section -->
+        <section id="biography" class="section-padding bg-accent-blue">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Publications & Conférences</h2>
+                <h2 class="section-title" data-aos="fade-up">Biographie</h2>
                 <div class="row">
-                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card h-100">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card" data-aos="fade-up">
                             <div class="card-body">
-                                <h4 class="card-title">La gestion des risques dans le contexte UMOA</h4>
-                                <p class="text-muted">Revue Bancaire Africaine - Janvier 2020</p>
-                                <p class="card-text">Analyse des défis spécifiques à la mise en œuvre des dispositifs de gestion des risques dans l'espace UMOA.</p>
-                                <a href="#" class="btn btn-sm btn-primary-blue">Lire l'article</a>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Informations personnelles</h5>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Nom:</strong> Léopold Wolffryd C. FATIGBA</li>
+                                            <li class="list-group-item"><strong>Date de naissance:</strong> 16/10/1971</li>
+                                            <li class="list-group-item"><strong>Lieu de naissance:</strong> Cotonou, Bénin</li>
+                                            <li class="list-group-item"><strong>Nationalité:</strong> Béninoise</li>
+                                            <li class="list-group-item"><strong>Situation familiale:</strong> Marié, père de 3 enfants</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>Coordonnées</h5>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Adresse:</strong> 07 B.P. 1179 Cotonou, Bénin</li>
+                                            <li class="list-group-item"><strong>Téléphone:</strong> +229 01 9661 6619</li>
+                                            <li class="list-group-item"><strong>Email:</strong> wolffryd@gmail.com</li>
+                                        </ul>
+                                        <h5 class="mt-4">Langues</h5>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Français:</strong> Très bien parlé et écrit</li>
+                                            <li class="list-group-item"><strong>Anglais:</strong> Assez bien lu et écrit</li>
+                                        </ul>
+                                        <h5 class="mt-4">Loisirs</h5>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Lecture, voyage</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">Implémentation de Bâle III: défis et opportunités</h4>
-                                <p class="text-muted">Conférence Régionale sur la Finance - Mars 2019</p>
-                                <p class="card-text">Présentation sur les enjeux de l'implémentation des normes de Bâle III dans les banques ouest-africaines.</p>
-                                <a href="#" class="btn btn-sm btn-primary-blue">Voir la présentation</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">Le contrôle permanent: pilier de la stabilité financière</h4>
-                                <p class="text-muted">Séminaire International de Supervision Bancaire - Novembre 2018</p>
-                                <p class="card-text">Communication sur le rôle du contrôle permanent dans la préservation de la stabilité du système financier.</p>
-                                <a href="#" class="btn btn-sm btn-primary-blue">Lire le document</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">Cybersecurity Risks in Banking</h4>
-                                <p class="text-muted">Journal of Financial Risk Management - Juin 2017</p>
-                                <p class="card-text">Article sur les risques cybernétiques émergents dans le secteur bancaire et stratégies de mitigation.</p>
-                                <a href="#" class="btn btn-sm btn-primary-blue">Lire l'article</a>
-                            </div>
-                        </div>
-                    </div>
+                         <a href="#biography" class="btn-bio">
+    <span>Lire ma Biographie</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
                 </div>
+              
             </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="section-padding">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Témoignages</h2>
-                <div class="glide testimonial-slider" data-aos="fade-up">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <div class="testimonial-slide">
-                                    <img src="https://via.placeholder.com/100x100" alt="Témoin 1" class="testimonial-img">
-                                    <p class="testimonial-quote">Wolffryd a transformé notre approche de la gestion des risques. Son expertise a été cruciale pour notre conformité aux normes de Bâle III.</p>
-                                    <h5 class="testimonial-author">Jean Koffi</h5>
-                                    <p class="testimonial-role">Directeur Général, Banque Internationale</p>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="testimonial-slide">
-                                    <img src="https://via.placeholder.com/100x100" alt="Témoin 2" class="testimonial-img">
-                                    <p class="testimonial-quote">Une expertise rare alliée à un sens aigu du leadership. Wolffryd a su bâtir une équipe performante et motivée.</p>
-                                    <h5 class="testimonial-author">Marie Adjavi</h5>
-                                    <p class="testimonial-role">DRH, Groupe Financier Ouest Africain</p>
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="testimonial-slide">
-                                    <img src="https://via.placeholder.com/100x100" alt="Témoin 3" class="testimonial-img">
-                                    <p class="testimonial-quote">Ses analyses pointues et sa vision stratégique ont considérablement renforcé notre dispositif de contrôle interne.</p>
-                                    <h5 class="testimonial-author">Paul Mensah</h5>
-                                    <p class="testimonial-role">Président du Conseil, Banque Commerciale</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]"></div>
-                </div>
-            </div>
+         
         </section>
 
         <!-- Contact Section -->
@@ -1752,14 +1717,14 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <h5>Adresse</h5>
-                        <p>Cotonou, Bénin</p>
+                        <p>07 B.P. 1179 Cotonou, Bénin</p>
                     </div>
                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon-box icon-box-gold mb-3">
                             <i class="fas fa-phone"></i>
                         </div>
                         <h5>Téléphone</h5>
-                        <p>+229-0196616619</p>
+                        <p>+229 01 9661 6619</p>
                     </div>
                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon-box icon-box-accent mb-3">
@@ -1773,7 +1738,6 @@
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
@@ -1782,7 +1746,7 @@
     <!-- Footer -->
     <footer class="text-center text-white">
         <div class="container">
-            <p>&copy; 2023 Wolffryd FATIGBA. Tous droits réservés.</p>
+            <p>&copy; 2025 Wolffryd FATIGBA. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -1804,20 +1768,6 @@
             once: true,
             offset: 100
         });
-
-        // Initialize Glide.js for testimonials slider
-        new Glide('.testimonial-slider', {
-            type: 'carousel',
-            perView: 1,
-            autoplay: 3000,
-            hoverpause: true,
-            gap: 30,
-            breakpoints: {
-                768: {
-                    perView: 1
-                }
-            }
-        }).mount();
 
         // Initialize Particles.js
         particlesJS('particles-js', {
@@ -1963,19 +1913,6 @@
             themeIcon.classList.add('fa-sun');
         }
 
-        // Language switcher
-        const languageToggle = document.getElementById('languageToggle');
-        languageToggle.addEventListener('click', function() {
-            const currentLang = languageToggle.textContent;
-            if (currentLang === 'FR') {
-                languageToggle.textContent = 'EN';
-                // Here you would typically load the English version of the content
-            } else {
-                languageToggle.textContent = 'FR';
-                // Here you would typically load the French version of the content
-            }
-        });
-
         // Timeline animation on scroll
         const timelineItems = document.querySelectorAll('.timeline-item');
         
@@ -2008,67 +1945,12 @@
             this.reset();
         });
 
-        // Animate progress bars when in viewport
-        const progressBars = document.querySelectorAll('.progress-bar');
-        
-        function animateProgressBars() {
-            progressBars.forEach(bar => {
-                const position = bar.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (position < screenPosition) {
-                    const width = bar.getAttribute('aria-valuenow') + '%';
-                    bar.style.width = width;
-                }
-            });
-        }
-        
-        window.addEventListener('scroll', animateProgressBars);
-        window.addEventListener('load', animateProgressBars);
-
-        // Portfolio filtering (if needed in the future)
-        const filterButtons = document.querySelectorAll('.btn-filter');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
-        if (filterButtons.length > 0) {
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    
-                    const filterValue = this.getAttribute('data-filter');
-                    
-                    portfolioItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.classList.add('show');
-                        } else {
-                            item.classList.remove('show');
-                        }
-                    });
-                });
-            });
-        }
-         document.getElementById('expandAllExperience').addEventListener('click', function() {
-            const timelineItems = document.querySelectorAll('.timeline-item');
+        // Expand all experience items
+        document.getElementById('expandAllExperience').addEventListener('click', function() {
             timelineItems.forEach(item => {
                 item.classList.add('active');
             });
         });
-
-        // Animation pour les barres de compétences supplémentaires
-        function animateAllProgressBars() {
-            const progressBars = document.querySelectorAll('.progress-bar');
-            progressBars.forEach(bar => {
-                const width = bar.getAttribute('aria-valuenow') + '%';
-                bar.style.width = width;
-            });
-        }
-        
-        // Initialiser l'animation des barres de progression
-        window.addEventListener('load', animateAllProgressBars);
     </script>
 </body>
 </html>
