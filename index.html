@@ -78,7 +78,7 @@
             --darker-blue: #006699;
             --light-blue: #E0FFFF;
             --lighter-blue: #F0FFFF;
-            --gold: #d4af37;
+            --gold: #555;
             --accent-blue: #4fc3f7;
             --gray: #808080;
             --text-dark: #333;
@@ -313,7 +313,7 @@
         /* Enhanced Hero Section with Particles */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                        url('https://www.assurx.com/wp-content/uploads/2025/03/How-to-Use-a-Risk-Matrix-to-Ensure-Effective-Risk-Management.jpg.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -389,7 +389,7 @@
         .hero-tagline {
             font-size: 1.2rem;
             margin-bottom: 2.5rem;
-            color: var(--gold);
+            color: rgb(250, 250, 250);
             font-weight: 500;
             animation: fadeInUp 1.2s ease;
             opacity: 0;
@@ -467,7 +467,7 @@
         }
         
         .btn-gold:hover {
-            background-color: #c19b2e;
+            background-color: #554f3d;
             border-color: #c19b2e;
             color: white;
             transform: translateY(-3px);
@@ -545,12 +545,10 @@
             transform: rotate(45deg) translate(20%, 100%);
         }
         
-        .icon-box-gold {
-            background: linear-gradient(145deg, var(--gold), #c19b2e);
-        }
-        
-        .icon-box-accent {
-            background: linear-gradient(145deg, var(--accent-blue), #03a9f4);
+        .icon-box-gray {
+            background: linear-gradient(145deg, #6c757d, #5a6268) !important;
+            color: white;
+            box-shadow: 0 10px 20px rgba(108, 117, 125, 0.2);
         }
 
         .icon-box:hover {
@@ -613,17 +611,20 @@
 
         .timeline-date {
             position: absolute;
-            width: 120px;
+            width: auto;
+            min-width: 120px;
             background: linear-gradient(to right, var(--primary-blue), var(--dark-blue));
             color: white;
             text-align: center;
-            padding: 8px 12px;
+            padding: 8px 15px;
             border-radius: 30px;
             font-weight: 600;
-            left: -150px;
+            left: -180px;
             top: 10px;
             box-shadow: 0 5px 15px rgba(0, 176, 240, 0.3);
             transition: var(--transition);
+            z-index: 2;
+            white-space: nowrap;
         }
 
         .timeline-content {
@@ -1026,7 +1027,37 @@
             100% { transform: scale(1); }
         }
 
+        /* Uniformisation des puces */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ul li::marker {
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+
         /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+        }
+
         @media (max-width: 992px) {
             .hero-title {
                 font-size: 3rem;
@@ -1043,6 +1074,14 @@
             .section-padding {
                 padding: 80px 0;
             }
+            
+            .timeline-date {
+                position: relative;
+                width: auto;
+                left: 0;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1051,9 +1090,9 @@
             }
             
             .hero-section {
-            height: auto;
-            padding: 120px 0;
-            background-attachment: scroll;
+                height: auto;
+                padding: 120px 0;
+                background-attachment: scroll;
             }
             
             .hero-title {
@@ -1065,14 +1104,12 @@
             }
             
             .timeline-date {
-                position: relative;
-                width: auto;
-                left: 0;
-                margin-bottom: 15px;
+                font-size: 0.9rem;
+                padding: 6px 12px;
             }
             
             .timeline-content {
-                margin-left: 0;
+                margin-left: 40px;
                 padding: 20px;
             }
             
@@ -1088,19 +1125,9 @@
                 width: 200px;
                 height: 200px;
             }
-        }
-
-        @media (max-width: 576px) {
-            .hero-title {
-                font-size: 2rem;
-            }
             
-            .btn {
-                padding: 10px 20px;
-            }
-            
-            .section-padding {
-                padding: 60px 0;
+            .navbar-nav {
+                text-align: center;
             }
             
             .theme-switcher, .language-switcher {
@@ -1110,12 +1137,84 @@
                 text-align: center;
             }
         }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+            
+            .timeline-content {
+                margin-left: 30px;
+                padding: 15px;
+            }
+            
+            .timeline-item {
+                margin-bottom: 30px;
+            }
+            
+            .timeline-item::after {
+                left: 7px;
+                width: 18px;
+                height: 18px;
+            }
+            
+            .timeline {
+                padding-left: 30px;
+            }
+            
+            .timeline::after {
+                left: 15px;
+            }
+            
+            .timeline-date {
+                font-size: 0.85rem;
+                padding: 5px 10px;
+            }
+            
+            .timeline-details ul li {
+                font-size: 0.9rem;
+            }
+            
+            .card-body {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1rem;
+            }
+            
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Skip to main content for screen readers -->
-    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue fixed-top">
         <div class="container">
@@ -1141,11 +1240,12 @@
                         <a class="nav-link" href="#expertise">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="biobiographie.html">Biographie</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
                 </ul>
                 <div class="theme-switcher">
                     <button class="theme-btn" id="themeToggle" aria-label="Changer le thème">
@@ -1168,6 +1268,7 @@
                     <p class="hero-tagline">Expert en management des risques | Résilience – Intégrité – Excellence | Vision stratégique & impact durable</p>
                     <div class="mt-4">
                         <a href="#contact" class="btn btn-primary-blue me-3 pulse">Me contacter</a>
+                        
                         <a href="#about" class="btn btn-outline-light">En savoir plus</a>
                     </div>
                 </div>
@@ -1205,14 +1306,14 @@
                                 <p>Expert en évaluation des risques et élaboration des Stratégies d'atténuation</p>
                             </div>
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                                <div class="icon-box icon-box-gold">
+                                <div class="icon-box icon-box-gray">
                                     <i class="fas fa-balance-scale"></i>
                                 </div>
                                 <h5>Conformité Réglementaire</h5>
                                 <p>Spécialiste de la réglementation bancaire UMOA et des normes internationales</p>
                             </div>
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                                <div class="icon-box icon-box-accent">
+                                <div class="icon-box">
                                     <i class="fas fa-cogs"></i>
                                 </div>
                                 <h5>Contrôle Interne</h5>
@@ -1238,23 +1339,23 @@
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Gestion des risques
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Contrôle Interne
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Conformité réglementaire
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Réglementation Bâle II & III
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Référentiel COSO et norme ISO 31000
-                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                                <span class="badge bg-secondary rounded-pill">Avancé</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -1262,15 +1363,15 @@
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Ingénierie financière
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Lutte contre le blanchiment des capitaux (LBC-FT)
-                                                <span class="badge bg-primary rounded-pill">Avancé</span>
+                                                <span class="badge bg-secondary rounded-pill">Avancé</span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                                 Communication et leadership transversal
-                                                <span class="badge bg-primary rounded-pill">Expert</span>
+                                                <span class="badge bg-secondary rounded-pill">Expert</span>
                                             </li>
                                             
                                         </ul>
@@ -1286,12 +1387,12 @@
                             <div class="card-body">
                                 <h4 class="text-center mb-4">Autres Compétences</h4>
                                 <div class="d-flex flex-wrap justify-content-center">
-                                    <span class="badge bg-secondary m-1 p-2">Planification et organisation</span>
-                                    <span class="badge bg-secondary m-1 p-2">Architecte et Coach des savoirs</span>
-                                    <span class="badge bg-secondary m-1 p-2">Finance d'entreprise et Contrôle de gestion</span>
-                                    <span class="badge bg-secondary m-1 p-2">Analyse quantitative et modélisation</span>
-                                    <span class="badge bg-secondary m-1 p-2">Audit interne</span>
-                                    <span class="badge bg-secondary m-1 p-2">Word, Excel et PowerPoint</span>
+                                    <span class="badge bg-secondary m-2 p-3">Planification et organisation</span>
+                                    <span class="badge bg-secondary m-2 p-3">Architecte et Coach des savoirs</span>
+                                    <span class="badge bg-secondary m-2 p-3">Finance d'entreprise et Contrôle de gestion</span>
+                                    <span class="badge bg-secondary m-2 p-3">Analyse quantitative et modélisation</span>
+                                    <span class="badge bg-secondary m-2 p-3">Audit interne</span>
+                                    <span class="badge bg-secondary m-2 p-3">Word, Excel et PowerPoint</span>
                                 </div>
                             </div>
                         </div>
@@ -1310,7 +1411,7 @@
                         <div class="timeline-content">
                             <h4>Directeur des Risques et du Contrôle Permanent</h4>
                             <h5>BIIC</h5>
-                            <p>Rattaché administrativement au Directeur Général et fonctionnellement au Comité des risques du Conseil d'administration. Anime une équipe de 20 membres.</p>
+                            <p>Rattaché administrativement au Directeur Général et fonctionnellement au Comité des risques du Conseil d'administration. <br><br> Anime une équipe de 20 membres.</p>
                             <div class="timeline-details">
                                 <h6>Principales réalisations :</h6>
                                 <ul>
@@ -1338,7 +1439,7 @@
                         <div class="timeline-content">
                             <h4>Responsable de la Gestion des Risques</h4>
                             <h5>BIBE</h5>
-                            <p>Rattaché au Directeur Général. Anime une équipe de 3 membres.</p>
+                            <p>Rattaché au Directeur Général. <br><br>  Anime une équipe de 3 membres.</p>
                             <div class="timeline-details">
                                 <h6>Principales réalisations :</h6>
                                 <ul>
@@ -1374,7 +1475,7 @@
                         <div class="timeline-content">
                             <h4>Responsable du Contrôle Général</h4>
                             <h5>BIBE</h5>
-                            <p>Rattaché au Directeur Général. Anime une équipe de 5 membres.</p>
+                            <p>Rattaché au Directeur Général.  <br><br>  Anime une équipe de 5 membres.</p>
                             <div class="timeline-details">
                                 <h6>Principales réalisations :</h6>
                                 <ul>
@@ -1423,7 +1524,7 @@
                         <div class="timeline-content">
                             <h4>Chef d'agences</h4>
                             <h5>BIBE</h5>
-                            <p>Rattaché au Responsable Opérations Domestiques. Anime une équipe de 8 membres.</p>
+                            <p>Rattaché au Responsable Opérations Domestiques.  <br><br> Anime une équipe de 8 membres.</p>
                             <div class="timeline-details">
                                 <h6>Principales réalisations :</h6>
                                 <ul>
@@ -1442,7 +1543,7 @@
                                     <li>Organisation et animation du personnel en vue de garantir l'atteinte des objectifs assignés</li>
                                     <li>Elaboration des prévisions budgétaires et des rapports de performance</li>
                                     <li>Mission spéciale de régularisation des cautions échues non apurées ou non prorogées par toutes les agences de la banque</li>
-                                    <li>Mission spéciale de régularisation des commissions non prélevées sur des opérations de CREDOC effectuées courant 2008 et 2009 par le Service des Relations Internationales de la banque</li>
+                                    <li>Mission spéciale de régularisation des commissions non prélevées sur des opérations de CREDOC effectuées courant 2008 и 2009 par le Service des Relations Internationales de la banque</li>
                                 </ul>
                                 <h6>Résultats obtenus :</h6>
                                 <ul>
@@ -1525,7 +1626,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-box icon-box-gold me-3">
+                                    <div class="icon-box icon-box-gray me-3">
                                         <i class="fas fa-certificate"></i>
                                     </div>
                                     <div>
@@ -1541,7 +1642,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-box icon-box-gold me-3">
+                                    <div class="icon-box me-3">
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
@@ -1557,7 +1658,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-box icon-box-gold me-3">
+                                    <div class="icon-box icon-box-gray me-3">
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
@@ -1573,7 +1674,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon-box icon-box-gold me-3">
+                                    <div class="icon-box me-3">
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div>
@@ -1605,7 +1706,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <ul>
-                                            <li>Formation sur l'utilisation de l'application IDEA, logiciel de traitement de données, à Cotonou en Juillet 2023</li>
+                                            <li>Formation sur l'utilisation de l'application IDEA, software de traitement de données, à Cotonou en Juillet 2023</li>
                                             <li>Séminaires de formation sur « le nouveau dispositif prudentiel applicables aux banques et compagnies financières transposant les dispositions de Bâle II et Bâle III dans l'UMOA » à la BCEAO à Dakar (2015 et 2016) et à Cotonou (2017)</li>
                                             <li>Formation qualifiante sur la « Gestion des risques bancaires et Bâle II » à la BCEAO à Lomé en octobre 2013</li>
                                             <li>Séminaire de formation sur « l'acte uniforme de l'OHADA révisé portant organisation des sûretés » au Siège de la BOAD à Lomé en mai 2013</li>
@@ -1642,7 +1743,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <div class="icon-box icon-box-gold mb-3">
+                                <div class="icon-box icon-box-gray mb-3">
                                     <i class="fas fa-leaf"></i>
                                 </div>
                                 <h4 class="card-title">Finance Verte et Risques ESG</h4>
@@ -1653,7 +1754,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <div class="icon-box icon-box-accent mb-3">
+                                <div class="icon-box mb-3">
                                     <i class="fas fa-cogs"></i>
                                 </div>
                                 <h4 class="card-title">Contrôle Interne</h4>
@@ -1664,7 +1765,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <div class="icon-box mb-3">
+                                <div class="icon-box icon-box-gray mb-3">
                                     <i class="fas fa-balance-scale"></i>
                                 </div>
                                 <h4 class="card-title">Conformité Réglementaire</h4>
@@ -1675,7 +1776,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <div class="icon-box icon-box-gold mb-3">
+                                <div class="icon-box mb-3">
                                     <i class="fas fa-calculator"></i>
                                 </div>
                                 <h4 class="card-title">Ingénierie Financière</h4>
@@ -1686,7 +1787,7 @@
                     <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
                         <div class="card h-100">
                             <div class="card-body text-center">
-                                <div class="icon-box icon-box-accent mb-3">
+                                <div class="icon-box icon-box-gray mb-3">
                                     <i class="fas fa-chart-line"></i>
                                 </div>
                                 <h4 class="card-title">Finance et Contrôle de Gestion</h4>
@@ -1786,14 +1887,14 @@
                         <p>07 B.P. 1179 Cotonou, Bénin</p>
                     </div>
                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box icon-box-gold mb-3">
+                        <div class="icon-box icon-box-gray mb-3">
                             <i class="fas fa-phone"></i>
                         </div>
                         <h5>Téléphone</h5>
                         <p>+229 01 9661 6619</p>
                     </div>
                     <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon-box icon-box-accent mb-3">
+                        <div class="icon-box mb-3">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h5>Email</h5>
